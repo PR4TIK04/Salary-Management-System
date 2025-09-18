@@ -11,7 +11,7 @@ The goal: showcase database design, complex queries, stored procedures, triggers
 - `queries.sql`         : Useful analytics & investigation queries.
 - `README.md`           : This file.
 
-## Unique features added (compared to basic repo)
+## Unique features added 
 1. Attendance integration + deduction procedure.  
 2. Leave management and tracking.  
 3. Tax slabs and simplified tax calculation in stored proc.  
