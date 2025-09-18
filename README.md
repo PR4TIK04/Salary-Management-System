@@ -20,24 +20,29 @@ The goal: showcase database design, complex queries, stored procedures, triggers
 6. Promotion eligibility and salary-anomaly detection queries.  
 7. Clear project structure so it reads like a case study.
 
-## How to present on GitHub (suggested)
-- Keep the SQL files as-is so a recruiter can open and review easily.
-- Add `ER_diagram.png` (optional) — a diagram of tables and relations. If you can't generate a PNG, keep an ASCII / Markdown diagram in README.
-- Add sample query outputs as screenshots or sample CSV in `/samples/` (optional).
-- In README, explain how to run each script in order:
-  1. `schema.sql`
-  2. `insert_data.sql`
-  3. `procedures.sql`
-  4. `triggers.sql`
-  5. Run `CALL calculate_net_salary(emp_id, year, month);` for employees.
-  6. Run `CALL apply_attendance_deductions(year, month);`
 
-## Notes
-- This project is designed to be a **showcase**. You don't need to run it locally to present it on your GitHub — but if you want to, install MySQL and execute the scripts in the order above.
-- Replace sample data with company-like realistic data if you'd like more polish.
+---
 
---- 
-If you want, I can:
-- Generate an `ER_diagram.md` (ASCII) and include it.
-- Create a ZIP of all files for you to download.
-- Add more sample queries or adjust tax logic for your country.
+## 🚀 How to Run the Project
+
+You can run this project in **two ways**:
+
+###  Using Local Database (MySQL / MariaDB)
+1. Install [MySQL](https://dev.mysql.com/downloads/) or use MariaDB.
+2. Create a new database:
+   ```sql
+   CREATE DATABASE salary_mgmt;
+   USE salary_mgmt;
+
+3. Import the files in this order:
+   ```
+   mysql -u root -p salary_mgmt < schema.sql
+   mysql -u root -p salary_mgmt < insert_data.sql
+   mysql -u root -p salary_mgmt < procedures.sql
+   mysql -u root -p salary_mgmt < triggers.sql
+
+4.Run queries:
+  ```
+  mysql -u root -p salary_mgmt < queries.sql
+
+
