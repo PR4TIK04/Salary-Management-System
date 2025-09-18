@@ -1,7 +1,7 @@
-# Enhanced Salary Management System (SQL Project)
+# Salary Management System (SQL Project)
 
-This repository contains an **enhanced, portfolio-ready** Salary Management System implemented as SQL scripts (MySQL-compatible).  
-The goal: showcase database design, complex queries, stored procedures, triggers, audit logging and analytics — without requiring a running server. Perfect to host on GitHub as a SQL portfolio piece.
+This repository contains an ** Salary Management System ** implemented as SQL scripts (MySQL-compatible).  
+The goal: showcase database design, complex queries, stored procedures, triggers, audit logging and analytics — without requiring a running server. 
 
 ## What you'll find
 - `schema.sql`          : Database schema (tables, constraints).
@@ -18,14 +18,14 @@ The goal: showcase database design, complex queries, stored procedures, triggers
 4. Audit logs for salary changes and actions (triggers + proc).  
 5. Bonuses table and summary queries.  
 6. Promotion eligibility and salary-anomaly detection queries.  
-7. Clear project structure so it reads like a case study.
+7. Clear project structure.
 
 
 ---
 
 ## 🚀 How to Run the Project
 
-You can run this project in **two ways**:
+You can run this project:
 
 ###  Using Local Database (MySQL / MariaDB)
 1. Install [MySQL](https://dev.mysql.com/downloads/) or use MariaDB.
